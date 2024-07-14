@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembelajaran Algoritma</title>
+   <style>
+    body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #00bfff;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(to right, #4CAF50, #388E3C);
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav {
+    background: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background: #4CAF50;
+    color: #fff;
+}
+
+main {
+    padding: 2em;
+    max-width: 900px;
+    margin: auto;
+}
+
+section {
+    margin-bottom: 2em;
+    background: #ffffff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    margin-top: 0;
+    color: #4CAF50;
+    font-size: 2em;
+    border-bottom: 2px solid #f4f4f4;
+    padding-bottom: 0.5em;
+}
+
+section h3 {
+    margin-top: 0;
+    color: #388E3C;
+    font-size: 1.5em;
+}
+
+pre {
+    background: #272822;
+    color: #f8f8f2;
+    border-left: 5px solid #4CAF50;
+    overflow-x: auto;
+    padding: 1em;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+}
+
+pre code {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 2em;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 1em;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul li a {
+        padding: 0.5em 0.8em;
+    }
+
+    main {
+        padding: 1em;
+    }
+
+    section {
+        padding: 1.5em;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    section h3 {
+        font-size: 1.2em;
+    }
+
+    pre {
+        font-size: 0.9em;
+    }
+}
+
+   </style>
+</head>
+<body>
+    <header>
+        <h1>Pembelajaran Algoritma</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="halaman1.html">Beranda</a></li>
+            <li><a href="#definisi">Definisi</a></li>
+            <li><a href="#penjelasan">penjelasan</a></li>
+            <li><a href="#jenis">Jenis-jenis Algoritma</a></li>
+            <li><a href="#contoh">Contoh Algoritma</a></li>
+            <li><a href="halaman5.html">ringkasan</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="definisi">
+            <h2>Definisi Algoritma</h2>
+            <p>Algoritma adalah langkah-langkah logis dan sistematis yang digunakan untuk menyelesaikan suatu masalah atau mencapai tujuan tertentu. Algoritma terdiri dari serangkaian instruksi yang dijalankan secara berurutan untuk menghasilkan output yang diinginkan dari input yang diberikan.</p>
+        </section>
+        <section id="penjelasan">
+            <h2>penjelasan</h2>
+            <p>Sebelumnya, mari kita lihat pengertian algoritma menurut ahli. Donald Ervin Knuth menyebutkan algoritma adalah sekumpulan aturan-aturan berhingga yang memberikan sederetan operasi-operasi untuk menyelesaikan masalah tertentu.
+
+                Sederhananya, algoritma adalah suatu langkah atau metode yang telah direncanakan secara matang agar berurutan dan tersusun rapi, serta sering digunakan untuk menyelesaikan suatu masalah dengan  memberikan petunjuk tindakan.</p>
+        </section>
+        <section id="jenis">
+            <h2>Jenis-jenis Algoritma</h2>
+            <ul>
+                <li><a href="#brute-force">Algoritma Brute Force</a></li>
+                <li><a href="#divide-and-conquer">Algoritma Divide and Conquer</a></li>
+                <li><a href="#greedy">Algoritma Greedy</a></li>
+                <li><a href="#dynamic-programming">Algoritma Dynamic Programming</a></li>
+                <li><a href="#backtracking">Algoritma Backtracking</a></li>
+            </ul>
+        </section>
+        <section id="contoh">
+            <h2>Contoh Algoritma</h2>
+
+            <section id="brute-force">
+                <h3>Algoritma Brute Force: Pencarian Linear</h3>
+                <p>Algoritma brute-force adalah pendekatan dasar dalam pemrograman dan ilmu komputer untuk menyelesaikan masalah dengan mencoba semua kemungkinan solusi hingga menemukan solusi yang benar. Metode ini sangat sederhana dan langsung, tetapi sering kali tidak efisien untuk masalah yang kompleks atau besar.
+                    <br>
+                    <p>Berikut adalah beberapa karakteristik utama dari algoritma brute-force:</p>
+
+                    <p>1.Kesederhanaan: Algoritma brute-force mudah dipahami dan diimplementasikan karena hanya membutuhkan enumerasi semua kemungkinan solusi.</p>
+                    <p>2.Kepastian: Jika ada solusi, algoritma brute-force pasti akan menemukannya, karena mencoba semua kemungkinan.</p>
+                    <p>3.Inefisien: Algoritma ini bisa sangat lambat dan tidak efisien, terutama untuk masalah dengan ruang solusi yang sangat besar. Waktu komputasi dapat meningkat secara eksponensial dengan ukuran input.</p>
+                    <p>4.Penggunaan Ruang: Selain waktu komputasi, algoritma brute-force juga dapat memerlukan banyak memori jika harus menyimpan semua kemungkinan solusi.</p>
+                    <br>
+                    <p>Contoh penggunaan algoritma brute-force:</p>
+                    
+                    <p>1.Pencarian Kata Sandi: Mencoba semua kombinasi karakter hingga menemukan kata sandi yang benar.</p>
+                    <p>2.Masalah Knapsack: Mencoba semua kombinasi barang untuk menemukan kombinasi yang memiliki nilai total tertinggi tanpa melebihi kapasitas berat.</p>
+                    <p>3.Pencarian Pola: Mencocokkan pola dalam teks dengan memeriksa setiap posisi dalam teks satu per satu.</p>
+                <pre><code>
+// Pencarian Linear dalam JavaScript
+function linearSearch(arr, x) {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === x) {
+            return i;
+        }
+    }
+    return -1;
+}
+
+// Contoh penggunaan
+let array = [2, 3, 4, 10, 40];
+let x = 10;
+let result = linearSearch(array, x);
+console.log(result === -1 ? "Elemen tidak ditemukan" : "Elemen ditemukan pada indeks " + result);
+                </code></pre>
+            </section>
+
+            <section id="divide-and-conquer">
+                <h3>Algoritma Divide and Conquer: Merge Sort</h3>
+                <p>Algoritma Divide and Conquer adalah pendekatan dalam pemrograman dan ilmu komputer yang memecahkan masalah menjadi submasalah yang lebih kecil dan lebih mudah dipecahkan, kemudian menggabungkan solusi dari submasalah tersebut untuk mendapatkan solusi akhir. Salah satu algoritma terkenal yang menggunakan pendekatan ini adalah Merge Sort.</p>
+                <p>Merge Sort adalah algoritma pengurutan yang efisien yang menggunakan metode Divide and Conquer. Algoritma ini membagi daftar yang akan diurutkan menjadi dua bagian yang lebih kecil, mengurutkan setiap bagian secara rekursif, dan kemudian menggabungkan dua bagian yang sudah diurutkan tersebut untuk membentuk daftar yang terurut.</p>
+                <p>Berikut adalah beberapa karakteristik utama dari Merge Sort:</p>
+                <p>1. **Efisiensi**: Merge Sort memiliki waktu komputasi O(n log n) dalam kasus terbaik, rata-rata, dan terburuk, yang membuatnya lebih efisien dibandingkan dengan algoritma pengurutan sederhana seperti Bubble Sort dan Insertion Sort.</p>
+                <p>2. **Stabil**: Merge Sort adalah algoritma pengurutan yang stabil, artinya elemen-elemen yang memiliki nilai yang sama akan tetap berada dalam urutan yang sama seperti pada daftar asli.</p>
+                <p>3. **Penggunaan Ruang**: Merge Sort memerlukan ruang tambahan untuk array sementara yang digunakan selama proses penggabungan, sehingga penggunaan memorinya adalah O(n).</p>
+                <p>Contoh penggunaan Merge Sort:</p>
+                <p>1. **Pengurutan Array**: Mengurutkan daftar angka, string, atau elemen lainnya.</p>
+                <p>2. **Penggabungan Data**: Digunakan dalam algoritma penggabungan untuk basis data dan pemrosesan data besar.</p>
+                <pre><code>
+// Merge Sort dalam JavaScript
+function mergeSort(arr) {
+    if (arr.length <= 1) {
+        return arr;
+    }
+
+    const mid = Math.floor(arr.length / 2);
+    const left = arr.slice(0, mid);
+    const right = arr.slice(mid);
+
+    return merge(mergeSort(left), mergeSort(right));
+}
+
+function merge(left, right) {
+    let resultArray = [], leftIndex = 0, rightIndex = 0;
+
+    while (leftIndex < left.length && rightIndex < right.length) {
+        if (left[leftIndex] < right[rightIndex]) {
+            resultArray.push(left[leftIndex]);
+            leftIndex++;
+        } else {
+            resultArray.push(right[rightIndex]);
+            rightIndex++;
+        }
+    }
+
+    return resultArray.concat(left.slice(leftIndex)).concat(right.slice(rightIndex));
+}
+
+// Contoh penggunaan
+let array = [12, 11, 13, 5, 6, 7];
+console.log("Array sebelum diurutkan: " + array);
+console.log("Array setelah diurutkan: " + mergeSort(array));
+                </code></pre>
+            </section>
+
+            <section id="greedy">
+                <h3>Algoritma Greedy: Pencarian Koin</h3>
+                <p>Algoritma greedy adalah pendekatan dasar dalam pemrograman dan ilmu komputer untuk menyelesaikan masalah dengan membuat pilihan lokal terbaik pada setiap langkah dengan harapan bahwa pilihan-pilihan lokal ini akan mengarah pada solusi global yang optimal. Metode ini sangat sederhana dan langsung, tetapi tidak selalu menghasilkan solusi optimal untuk semua masalah.</p>
+                <p>Berikut adalah beberapa karakteristik utama dari algoritma greedy:</p>
+                <p>1. Kesederhanaan: Algoritma greedy mudah dipahami dan diimplementasikan karena hanya memerlukan pembuatan pilihan lokal terbaik pada setiap langkah.</p>
+                <p>2. Kecepatan: Algoritma greedy sering kali lebih cepat dibandingkan dengan metode lain, karena tidak perlu mengevaluasi semua kemungkinan solusi.</p>
+                <p>3. Myopia: Algoritma ini hanya mempertimbangkan informasi lokal saat membuat keputusan, sehingga bisa kehilangan solusi optimal dalam beberapa kasus.</p>
+                <p>4. Efisiensi Ruang: Algoritma greedy biasanya menggunakan lebih sedikit memori karena tidak perlu menyimpan semua kemungkinan solusi seperti algoritma brute-force.</p>
+                <p>Contoh penggunaan algoritma greedy:</p>
+                <p>1. Algoritma Prim dan Kruskal: Digunakan untuk menemukan pohon rentang minimum dalam sebuah graf.</p>
+                <p>2. Masalah Knapsack (variasi fractional): Memilih barang untuk dimasukkan ke dalam knapsack sedemikian rupa sehingga nilai total barang maksimal tanpa melebihi kapasitas berat.</p>
+                <p>3. Algoritma Huffman: Digunakan untuk membangun pohon kode Huffman untuk kompresi data.</p>
+                <pre><code>
+// Algoritma Pencarian Koin dalam JavaScript
+function coinChange(coins, amount) {
+    coins.sort((a, b) => b - a);
+    let totalCoins = 0;
+
+    for (let coin of coins) {
+        let count = Math.floor(amount / coin);
+        totalCoins += count;
+        amount -= coin * count;
+    }
+
+    return amount === 0 ? totalCoins : -1;
+}
+
+// Contoh penggunaan
+let coins = [1, 2, 5, 10, 20, 50];
+let amount = 93;
+let result = coinChange(coins, amount);
+console.log(result === -1 ? "Jumlah tidak dapat diberikan dengan koin yang tersedia" : "Jumlah koin yang dibutuhkan: " + result);
+                </code></pre>
+            </section>
+
+            <section id="dynamic-programming">
+                <h3>Algoritma Dynamic Programming: Fibonacci</h3>
+                <p>Dynamic Programming (DP) adalah teknik pemrograman yang digunakan untuk memecahkan masalah dengan memecahnya menjadi sub-masalah yang lebih kecil dan lebih mudah dipecahkan. Teknik ini sangat efektif untuk masalah yang memiliki struktur sub-masalah yang berulang dan overlapping subproblems. Salah satu contoh klasik dari penggunaan Dynamic Programming adalah dalam menghitung bilangan Fibonacci.</p>
+                <h3>Fibonacci Sequence</h3>
+                <p>Deret Fibonacci adalah deret angka di mana setiap angka setelah dua angka pertama adalah jumlah dari dua angka sebelumnya. Secara matematis, deret Fibonacci didefinisikan sebagai:
+
+                    𝐹
+                    (
+                    0
+                    )
+                    =
+                    0
+                    F(0)=0
+                    𝐹
+                    (
+                    1
+                    )
+                    =
+                    1
+                    F(1)=1
+                    𝐹
+                    (
+                    𝑛
+                    )
+                    =
+                    𝐹
+                    (
+                    𝑛
+                    −
+                    1
+                    )
+                    +
+                    𝐹
+                    (
+                    𝑛
+                    −
+                    2
+                    )
+                     untuk 
+                    𝑛
+                    ≥
+                    2
+                    F(n)=F(n−1)+F(n−2) untuk n≥2</p>
+                    <h3>Karakteristik Algoritma Dynamic Programming pada Fibonacci</h3>
+                    <p>Overlapping Subproblems: Dalam perhitungan Fibonacci, banyak sub-masalah yang berulang. Sebagai contoh, untuk menghitung 
+                        𝐹
+                        (
+                        5
+                        )
+                        F(5), kita perlu menghitung 
+                        𝐹
+                        (
+                        4
+                        )
+                        F(4) dan 
+                        𝐹
+                        (
+                        3
+                        )
+                        F(3). Untuk menghitung 
+                        𝐹
+                        (
+                        4
+                        )
+                        F(4), kita perlu menghitung 
+                        𝐹
+                        (
+                        3
+                        )
+                        F(3) dan 
+                        𝐹
+                        (
+                        2
+                        )
+                        F(2), dan seterusnya. Banyak dari sub-masalah ini dihitung berulang kali dalam pendekatan naive (rekursif).</p>
+                        <p>Optimal Substructure: Solusi dari masalah utama dapat dibangun dari solusi optimal dari sub-masalahnya. Dalam kasus Fibonacci, nilai 
+                            𝐹
+                            (
+                            𝑛
+                            )
+                            F(n) dapat diperoleh dari nilai 
+                            𝐹
+                            (
+                            𝑛
+                            −
+                            1
+                            )
+                            F(n−1) dan 
+                            𝐹
+                            (
+                            𝑛
+                            −
+                            2
+                            )
+                            F(n−2)</p>
+                <pre><code>
+// Algoritma Fibonacci dalam JavaScript
+function fibonacci(n) {
+    let fib = [0, 1];
+    for (let i = 2; i <= n; i++) {
+        fib[i] = fib[i - 1] + fib[i - 2];
+    }
+    return fib[n];
+}
+
+// Contoh penggunaan
+let n = 10;
+console.log("Fibonacci ke-" + n + " adalah " + fibonacci(n));
+                </code></pre>
+            </section>
+
+            <section id="backtracking">
+                <h3>Algoritma Backtracking: Sudoku Solver</h3>
+                p
+                Algoritma Backtracking adalah metode yang digunakan untuk menyelesaikan masalah dengan mencoba membangun solusi secara bertahap dan mengabaikan solusi yang tidak memenuhi syarat secepat mungkin. Backtracking sangat efektif untuk masalah yang memiliki banyak kemungkinan solusi, seperti permainan Sudoku.
+                <h3>Karakteristik Algoritma Backtracking</h3>
+                <p>Recursive Approach: Algoritma backtracking umumnya diimplementasikan menggunakan rekursi</p>
+                <p>Trial and Error: Algoritma mencoba setiap kemungkinan dan kembali (backtrack) ketika menemukan solusi yang tidak valid.</p>
+                <p>Pruning: Solusi yang tidak mungkin (invalid) segera ditinggalkan untuk mengurangi ruang pencarian.</p>
+                <pre><code>
+// Sudoku Solver dalam JavaScript
+const SIZE = 9;
+const BOX_SIZE = 3;
+
+function solve(board) {
+    for (let row = 0; row < SIZE; row++) {
+        for (let col = 0; col < SIZE; col++) {
+            if (board[row][col] === 0) {
+                for (let num = 1; num <= SIZE; num++) {
+                    if (isValid(board, row, col, num)) {
+                        board[row][col] = num;
+                        if (solve(board)) {
+                            return true;
+                        }
+                        board[row][col] = 0;
+                    }
+                }
+                return false;
+            }
+        }
+    }
+    return true;
+}
+
+function isValid(board, row, col, num) {
+    for (let i = 0; i < SIZE; i++) {
+        if (board[row][i] === num || board[i][col] === num ||
+            board[BOX_SIZE * Math.floor(row / BOX_SIZE) + Math.floor(i / BOX_SIZE)][BOX_SIZE * Math.floor(col / BOX_SIZE) + i % BOX_SIZE] === num) {
+            return false;
+        }
+    }
+    return true;
+}
+
+// Contoh penggunaan
+let board = [
+    [5, 3, 0, 0, 7, 0, 0, 0, 0],
+    [6, 0, 0, 1, 9, 5, 0, 0, 0],
+    [0, 9, 8, 0, 0, 0, 0, 6, 0],
+    [8, 0, 0, 0, 6, 0, 0, 0, 3],
+    [4, 0, 0, 8, 0, 3, 0, 0, 1],
+    [7, 0, 0, 0, 2, 0, 0, 0, 6],
+    [0, 6, 0, 0, 0, 0, 2, 8, 0],
+    [0, 0, 0, 4, 1, 9, 0, 0, 5],
+    [0, 0, 0, 0, 8, 0, 0, 7, 9]
+];
+solve(board);
+console.log("Board setelah dipecahkan: ", board);
+                </code></pre>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Pembelajaran Algoritma. Semua hak dilindungi.</p>
+    </footer>
+</body>
+</html>
