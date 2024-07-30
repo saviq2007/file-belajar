@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sejarah dan Konsep Dasar PBO</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            margin: 0;
+            background-color: #ffffff;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #592727;
+            color: rgb(255, 243, 243);
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            height: 100%;
+        }
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        .sidebar a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            display: block;
+            padding: 10px 0;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .sidebar a:hover {
+            background-color: #00bfff;
+            border-radius: 4px;
+        }
+        .content {
+            margin-left: 270px;
+            padding: 40px;
+            background-color: #000000;
+            min-height: 100vh;
+            box-shadow: 0 0 10px rgba(255, 250, 250, 0.1);
+        }
+        h1, h2 {
+            color: #3300ff;
+        }
+        p {
+            color: #ffffff;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            color: #ffffff;
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #000000;
+            font-size: 18px;
+        }
+        th {
+            background-color: #3498db;
+            color: rgb(255, 255, 255);
+        }
+        td {
+            background-color: #4f2525;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Menu</h2>
+        <a href="#sejarah-pbo">Sejarah PBO</a>
+        <a href="#perbedaan">Perbedaan Prosedural & PBO</a>
+    </div>
+    <div class="content">
+        <h1 id="sejarah-pbo">Sejarah dan Konsep Dasar PBO</h1>
+
+        <h2>Esai Sejarah PBO</h2>
+        <p>
+            Pemrograman Berorientasi Objek (PBO) adalah paradigma yang berfokus pada objek sebagai unit dasar dalam pemrograman. Konsep ini dimulai pada tahun 1960-an dengan pengembangan bahasa Simula oleh Ole-Johan Dahl dan Kristen Nygaard di Norwegia. Mereka memperkenalkan konsep "kelas" dan "objek" yang memungkinkan pengembangan perangkat lunak dengan cara yang lebih modular dan terorganisir.
+        </p>
+        <p>
+            Simula, sebagai bahasa pemrograman pertama yang mendukung konsep PBO, memberikan dasar bagi pengembangan lebih lanjut dalam bidang ini. Namun, peran penting dalam mempopulerkan PBO dimainkan oleh bahasa Smalltalk, yang dikembangkan oleh Alan Kay dan timnya di Xerox PARC pada 1970-an. Smalltalk tidak hanya mengimplementasikan konsep PBO sepenuhnya, tetapi juga memperkenalkan lingkungan pengembangan yang interaktif dan fleksibel.
+        </p>
+        <p>
+            Pada awal 1980-an, Bjarne Stroustrup mengembangkan C++ sebagai perpanjangan dari bahasa C dengan tambahan fitur-fitur PBO. C++ menggabungkan kecepatan dan efisiensi bahasa C dengan keunggulan modularitas dari PBO, menjadikannya populer di kalangan pengembang perangkat lunak industri.
+        </p>
+        <p>
+            Java, diperkenalkan pada pertengahan 1990-an oleh Sun Microsystems, membawa PBO ke level yang lebih luas. Dengan moto "tulis sekali, jalankan di mana saja," Java menarik banyak pengembang web dengan janji portabilitas dan keamanan. Bahasa ini memainkan peran kunci dalam mempopulerkan PBO di era internet.
+        </p>
+        <p>
+            PBO telah mengubah cara perangkat lunak dikembangkan dan dipelihara dengan memperkenalkan prinsip-prinsip seperti enkapsulasi, pewarisan, dan polimorfisme. Hal ini memungkinkan pengembang untuk membuat kode yang lebih modular, dapat digunakan kembali, dan mudah dipelihara. PBO juga mempermudah kolaborasi dalam tim pengembangan perangkat lunak, karena setiap bagian dari sistem dapat diisolasi sebagai objek yang independen.
+        </p>
+
+        <h2 id="perbedaan">Perbedaan Pemrograman Prosedural dan PBO</h2>
+        <table>
+            <tr>
+                <th>Aspek</th>
+                <th>Pemrograman Prosedural</th>
+                <th>Pemrograman Berorientasi Objek</th>
+            </tr>
+            <tr>
+                <td>Struktur Program</td>
+                <td>Program diorganisir menjadi fungsi atau prosedur</td>
+                <td>Program diorganisir menjadi objek dan kelas</td>
+            </tr>
+            <tr>
+                <td>Pendekatan</td>
+                <td>Berbasis tugas/prosedur</td>
+                <td>Berbasis objek dan interaksi antar objek</td>
+            </tr>
+            <tr>
+                <td>Kelebihan</td>
+                <td>Lebih mudah untuk memulai, baik untuk tugas sederhana</td>
+                <td>Lebih modular, dapat dipelihara, dan dapat diperluas</td>
+            </tr>
+            <tr>
+                <td>Contoh Bahasa Pemrograman</td>
+                <td>C, Pascal, Fortran</td>
+                <td>Java, C++, Python</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
